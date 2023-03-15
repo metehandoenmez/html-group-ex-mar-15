@@ -8,9 +8,9 @@ Create the basic html, head and body tags in the form.html file.
 Add a form tag in the body tag, with action="form-data.html"
 - create a div with class "form-input-container"
   - Add a label and an input tag, as described below. All inputs are **required**:
-  - label "Your name:", input type text required
-  - label "Your email address", input type email required
-  - label "Will you bring a guest?", input type choice, Yes/No required
+  - label "Your name:", input type text required, name="fullname"
+  - label "Your email address", input type email required, name="email"
+  - label "Will you bring a guest?", input is a select tag, with two option tags inside of it, with "Yes" and "No" for the options. The option tag: <option value="yes">Yes</option> , Yes/No required, name="hasGuest"
   - create an input tag of type submit.
 
 Add another form tag, with action="form-data.html"
@@ -22,7 +22,7 @@ Add another form tag, with action="form-data.html"
   - "Title:", input text,
   - "Phone:", input type tel,
   - "Select a date:", input type date,
-  - "Job Function", select tag, with options:
+  - "Job Function", select tag, with options, name="jobfunction":
    - Project Manager
    - Backend Developer
    - Frontend Developer
